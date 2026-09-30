@@ -33,8 +33,8 @@ jobs:
           mkdir -p artifacts
           python -m pytest -q --junitxml=artifacts/pytest.xml
           python -m compileall -q src scripts
-          node --check src/dreamina_director/web/app.js
-          node --check src/dreamina_director/web/widget.js
+          node --check src/augurama/web/app.js
+          node --check src/augurama/web/widget.js
       - name: Package thin host release candidates
         run: |
           python scripts/package_releases.py --out dist

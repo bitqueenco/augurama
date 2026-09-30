@@ -1,0 +1,21 @@
+{
+  "label": "Unbroken take",
+  "description": "Continuous camera geography with no hidden cuts or state resets.",
+  "principles": [
+    "Treat the sequence as one uninterrupted take. Do not insert cuts, transitions or speed ramps unless explicitly authored.",
+    "Keep camera inertia, subject trajectories, parallax and occlusion physically coherent.",
+    "Carry wardrobe, lighting, environment and object positions continuously through time.",
+    "Reach the specified ending through visible action rather than teleportation or an unrelated composition."
+  ],
+  "schema_version": 1,
+  "id": "continuous",
+  "version": "1.0.0",
+  "authorship": "Corgi-Verse Software",
+  "evidence_status": "Original direction heuristics; visual effectiveness requires provider renders and human evaluation, not guaranteed by unit tests.",
+  "priority": [
+    "provider safety and API requirements",
+    "explicit user direction",
+    "approved shot timing and reference roles",
+    "recipe heuristics"
+  ]
+}

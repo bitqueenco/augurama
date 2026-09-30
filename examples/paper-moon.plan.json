@@ -1,0 +1,32 @@
+{
+  "plan": {
+    "title": "Paper moon",
+    "original_request": "A synthetic corgi discovers a paper moon. Four seconds, vertical, no dialogue.",
+    "direction": "A synthetic corgi discovers a paper moon in a miniature studio. One uninterrupted slow push-in. The moon rotates gently; end on a curious still gaze.",
+    "model_profile": "seedance-2.0",
+    "recipe": "continuous",
+    "operation": "generate",
+    "duration_seconds": 4,
+    "aspect_ratio": "9:16",
+    "resolution": "720p",
+    "shots": [],
+    "references": [],
+    "audio": {
+      "enabled": true,
+      "dialogue": [],
+      "ambience": "One gentle paper creak.",
+      "music": "No music."
+    },
+    "preserve": [
+      "One synthetic corgi; one paper moon; one uninterrupted take."
+    ],
+    "avoid": [
+      "Text",
+      "Additional animals",
+      "Dialogue"
+    ],
+    "parent_generation_id": null,
+    "seed": null,
+    "watermark": true
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "release": "0.1.0-rc.1",
+  "source_digest": "1771889a3e481fabfe02fab8d424a152d963bbeb7c87924aef030aa6d1c10e23",
+  "upstream_repository": "bohselecta/dreamina-director",
+  "upstream_branch": "release/dual-plugin-rc1",
+  "upstream_base": "112f8f60d2e618ba100f3a514b0af6159a611c19",
+  "source_pushed": false,
+  "tests": {
+    "tests": "124",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "12.861",
+    "timestamp": "2026-09-29T20:17:46.983832+00:00"
+  },
+  "test_modules": {
+    "tests.test_auth": 20,
+    "tests.test_browser_offline": 2,
+    "tests.test_core": 32,
+    "tests.test_http_mcp": 13,
+    "tests.test_media_security": 24,
+    "tests.test_operations": 18,
+    "tests.test_packages": 14,
+    "tests.test_server_cli": 1
+  },
+  "environment": {
+    "python": "3.13.5",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "chromium": "Chromium 144.0.7559.96 built on Debian GNU/Linux 13 (trixie)",
+    "ffprobe": "ffprobe version 7.1.5-0+deb13u1 Copyright (c) 2007-2026 the FFmpeg developers",
+    "node": "v22.16.0"
+  },
+  "checks": {
+    "real_cli_loopback_tcp": "passed",
+    "standalone_ui_offline_chromium": "passed",
+    "mcp_apps_simulated_host_offline_chromium": "passed",
+    "python_compile": "passed",
+    "javascript_syntax": "passed",
+    "shell_syntax": "passed",
+    "backend_wheel_build_and_independent_import": "passed",
+    "two_thin_host_archives": "passed",
+    "archive_reproducibility": "passed",
+    "public_package_missing_evidence_rejection": "passed"
+  },
+  "browser": {
+    "desktop": [
+      1440,
+      1100
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "embedded_harness": [
+      1080,
+      1000
+    ],
+    "keyboard_approval": true,
+    "reduced_motion_and_horizontal_overflow": true,
+    "fixture_video_decoded_seconds": 4,
+    "javascript_page_errors": 0,
+    "network_mode": "about:blank DOM + real FastAPI TestClient bridge; browser-origin/cookie/TLS behavior NOT tested"
+  },
+  "not_run": [
+    "Paid BytePlus call",
+    "Provider model entitlement",
+    "Actual native ChatGPT installation",
+    "Actual native Codex installation",
+    "Actual native Antigravity installation",
+    "Official MCP SDK interoperability",
+    "Production TLS/proxy/deployment",
+    "Docker build",
+    "GitHub Actions run",
+    "Independent security/vulnerability audit",
+    "Human visual quality of actual AI generation",
+    "Publisher/brand/legal clearance",
+    "Marketplace registration"
+  ],
+  "safety": {
+    "paid_requests": 0,
+    "public_deployment_created": false,
+    "secrets_in_host_archives": false,
+    "private_compiler_or_recipes_in_host_archives": false
+  }
+}

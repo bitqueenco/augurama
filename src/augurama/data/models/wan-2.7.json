@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "profile": "wan-2.7",
+  "provider": "fal-ai",
+  "model_id": "fal-ai/wan/v2.7/text-to-video",
+  "label": "Alibaba Wan 2.7",
+  "revision": "2026-09-29.1",
+  "verified_at": "2026-09-29",
+  "review_by": "2027-12-31",
+  "minimum_duration": 3,
+  "maximum_duration": 15,
+  "maximum_images": 8,
+  "maximum_videos": 4,
+  "maximum_audio": 4,
+  "maximum_reference_video_seconds": 15,
+  "maximum_reference_audio_seconds": 15,
+  "maximum_single_reference_seconds": 15,
+  "audio_only_reference": true,
+  "resolutions": [
+    "480p",
+    "720p",
+    "1080p"
+  ],
+  "aspect_ratios": [
+    "16:9",
+    "9:16",
+    "1:1",
+    "4:3",
+    "3:4"
+  ],
+  "raw_real_faces": true,
+  "native_audio": true,
+  "return_last_frame": true,
+  "max_prompt_characters": 8000,
+  "pricing": {
+    "currency": "USD",
+    "unit": "seconds",
+    "list_rates": {
+      "480p": 0.050,
+      "720p": 0.100,
+      "1080p": 0.150
+    },
+    "snapshot_date": "2026-09-29",
+    "source": "https://fal.ai/models/fal-ai/wan/v2.7/text-to-video",
+    "excludes": [
+      "tax",
+      "discounts"
+    ],
+    "not_a_billing_cap": true
+  },
+  "sources": [
+    "https://fal.ai/models/fal-ai/wan/v2.7/text-to-video"
+  ],
+  "release_notes": "Wan 2.7 video synthesis with multimodal conditioning."
+}

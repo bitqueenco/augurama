@@ -1,0 +1,274 @@
+{
+  "$defs": {
+    "AudioDirection": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "default": true,
+          "title": "Enabled",
+          "type": "boolean"
+        },
+        "dialogue": {
+          "items": {
+            "maxLength": 300,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 10,
+          "title": "Dialogue",
+          "type": "array"
+        },
+        "ambience": {
+          "default": "",
+          "maxLength": 400,
+          "title": "Ambience",
+          "type": "string"
+        },
+        "music": {
+          "default": "No music; retain environmental sound.",
+          "maxLength": 300,
+          "title": "Music",
+          "type": "string"
+        }
+      },
+      "title": "AudioDirection",
+      "type": "object"
+    },
+    "Reference": {
+      "additionalProperties": false,
+      "properties": {
+        "asset_id": {
+          "pattern": "^[a-z][a-z0-9_-]{7,95}$",
+          "title": "Asset Id",
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "identity",
+            "environment",
+            "style",
+            "object",
+            "motion",
+            "camera",
+            "audio",
+            "first_frame",
+            "last_frame"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "direction": {
+          "default": "",
+          "maxLength": 400,
+          "title": "Direction",
+          "type": "string"
+        }
+      },
+      "required": [
+        "asset_id",
+        "role"
+      ],
+      "title": "Reference",
+      "type": "object"
+    },
+    "Shot": {
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "maximum": 30,
+          "minimum": 0,
+          "title": "Start",
+          "type": "number"
+        },
+        "end": {
+          "exclusiveMinimum": 0,
+          "maximum": 30,
+          "title": "End",
+          "type": "number"
+        },
+        "action": {
+          "maxLength": 900,
+          "minLength": 3,
+          "title": "Action",
+          "type": "string"
+        },
+        "camera": {
+          "default": "",
+          "maxLength": 400,
+          "title": "Camera",
+          "type": "string"
+        },
+        "sound": {
+          "default": "",
+          "maxLength": 300,
+          "title": "Sound",
+          "type": "string"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "action"
+      ],
+      "title": "Shot",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "maxLength": 200,
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    },
+    "original_request": {
+      "maxLength": 6000,
+      "minLength": 3,
+      "title": "Original Request",
+      "type": "string"
+    },
+    "direction": {
+      "maxLength": 6000,
+      "minLength": 3,
+      "title": "Direction",
+      "type": "string"
+    },
+    "model_profile": {
+      "default": "seedance-2.0",
+      "maxLength": 80,
+      "pattern": "^[a-z0-9.-]+$",
+      "title": "Model Profile",
+      "type": "string"
+    },
+    "recipe": {
+      "default": "narrative",
+      "enum": [
+        "narrative",
+        "product",
+        "continuous"
+      ],
+      "title": "Recipe",
+      "type": "string"
+    },
+    "operation": {
+      "default": "generate",
+      "enum": [
+        "generate",
+        "edit",
+        "extend"
+      ],
+      "title": "Operation",
+      "type": "string"
+    },
+    "duration_seconds": {
+      "default": 12,
+      "maximum": 30,
+      "minimum": 4,
+      "title": "Duration Seconds",
+      "type": "integer"
+    },
+    "aspect_ratio": {
+      "default": "9:16",
+      "enum": [
+        "9:16",
+        "16:9",
+        "1:1",
+        "4:3",
+        "3:4",
+        "21:9"
+      ],
+      "title": "Aspect Ratio",
+      "type": "string"
+    },
+    "resolution": {
+      "default": "720p",
+      "enum": [
+        "480p",
+        "720p",
+        "1080p",
+        "4k"
+      ],
+      "title": "Resolution",
+      "type": "string"
+    },
+    "shots": {
+      "items": {
+        "$ref": "#/$defs/Shot"
+      },
+      "maxItems": 12,
+      "title": "Shots",
+      "type": "array"
+    },
+    "references": {
+      "items": {
+        "$ref": "#/$defs/Reference"
+      },
+      "maxItems": 50,
+      "title": "References",
+      "type": "array"
+    },
+    "audio": {
+      "$ref": "#/$defs/AudioDirection"
+    },
+    "preserve": {
+      "items": {
+        "maxLength": 300,
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 15,
+      "title": "Preserve",
+      "type": "array"
+    },
+    "avoid": {
+      "items": {
+        "maxLength": 300,
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 15,
+      "title": "Avoid",
+      "type": "array"
+    },
+    "parent_generation_id": {
+      "anyOf": [
+        {
+          "pattern": "^[a-z][a-z0-9_-]{7,95}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Parent Generation Id"
+    },
+    "seed": {
+      "anyOf": [
+        {
+          "maximum": 4294967295,
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Seed"
+    },
+    "watermark": {
+      "default": true,
+      "title": "Watermark",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "title",
+    "original_request",
+    "direction"
+  ],
+  "title": "GenerationPlan",
+  "type": "object"
+}

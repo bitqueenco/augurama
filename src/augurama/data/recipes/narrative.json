@@ -1,0 +1,21 @@
+{
+  "label": "Narrative rhythm",
+  "description": "One clear dramatic idea; readable action and continuity across authored beats.",
+  "principles": [
+    "Keep the main subject readable before secondary spectacle.",
+    "Let each authored action reach a visually understandable state before the next beat.",
+    "Maintain spatial continuity, screen direction and subject scale across cuts unless the direction explicitly changes them.",
+    "Preserve the specified ending; do not add a coda, title card, dialogue or new character."
+  ],
+  "schema_version": 1,
+  "id": "narrative",
+  "version": "1.0.0",
+  "authorship": "Corgi-Verse Software",
+  "evidence_status": "Original direction heuristics; visual effectiveness requires provider renders and human evaluation, not guaranteed by unit tests.",
+  "priority": [
+    "provider safety and API requirements",
+    "explicit user direction",
+    "approved shot timing and reference roles",
+    "recipe heuristics"
+  ]
+}

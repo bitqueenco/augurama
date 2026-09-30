@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "profile": "seedance-2.0-mini",
+  "provider": "byteplus-modelark",
+  "model_id": "dreamina-seedance-2-0-mini-260615",
+  "label": "Seedance 2.0 Mini",
+  "revision": "2026-09-29.1",
+  "verified_at": "2026-09-29",
+  "review_by": "2026-12-28",
+  "minimum_duration": 4,
+  "maximum_duration": 15,
+  "maximum_images": 9,
+  "maximum_videos": 3,
+  "maximum_audio": 3,
+  "maximum_reference_video_seconds": 15,
+  "maximum_reference_audio_seconds": 15,
+  "maximum_single_reference_seconds": 15,
+  "audio_only_reference": false,
+  "resolutions": [
+    "480p",
+    "720p"
+  ],
+  "aspect_ratios": [
+    "9:16",
+    "16:9",
+    "1:1",
+    "4:3",
+    "3:4",
+    "21:9"
+  ],
+  "raw_real_faces": false,
+  "native_audio": true,
+  "return_last_frame": true,
+  "max_prompt_characters": 8000,
+  "pricing": {
+    "currency": "USD",
+    "unit": "million_completion_tokens",
+    "list_rates": {
+      "480p": [
+        3.5,
+        2.1
+      ],
+      "720p": [
+        3.5,
+        2.1
+      ]
+    },
+    "estimated_fps": 24,
+    "snapshot_date": "2026-09-29",
+    "source": "https://docs.byteplus.com/en/docs/ModelArk/1544106",
+    "excludes": [
+      "minimum token rules",
+      "tax",
+      "negotiated rates",
+      "temporary discounts"
+    ],
+    "not_a_billing_cap": true
+  },
+  "sources": [
+    "https://docs.byteplus.com/en/docs/ModelArk/seedance-2-0",
+    "https://docs.byteplus.com/en/docs/modelark/create-video-generation-task-api",
+    "https://docs.byteplus.com/en/docs/ModelArk/seedance-portrait-asset-guide"
+  ],
+  "release_notes": "Conservative API subset. 4K excluded pending H.265 delivery validation. Provider model access is account-specific; no auto fallback."
+}

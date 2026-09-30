@@ -1,0 +1,26 @@
+{
+  "release": "0.1.0-rc.1",
+  "source_digest": "1771889a3e481fabfe02fab8d424a152d963bbeb7c87924aef030aa6d1c10e23",
+  "origin": "http://127.0.0.1:8765",
+  "public_acceptance_evidence_supplied": false,
+  "packages": [
+    {
+      "host": "openai",
+      "endpoint": "http://127.0.0.1:8765/mcp",
+      "local_shape_check": "passed",
+      "vendor_native_validation": "not_run",
+      "archive": "dreamina-director-openai-0.1.0-rc.1.zip",
+      "sha256": "58838d9c696446e0e83bd74626ae715e22deab62d4d7b7a9c28141952aa84874",
+      "bytes": 272479
+    },
+    {
+      "host": "antigravity",
+      "endpoint": "http://127.0.0.1:8765/mcp",
+      "local_shape_check": "passed",
+      "vendor_native_validation": "not_run",
+      "archive": "dreamina-director-antigravity-0.1.0-rc.1.zip",
+      "sha256": "284cb1cd92ec8160dfe944e492d32a623303818152b5979e734432597f886ee1",
+      "bytes": 270761
+    }
+  ]
+}

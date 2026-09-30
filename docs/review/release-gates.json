@@ -1,0 +1,16 @@
+{
+  "source_digest": null,
+  "origin": null,
+  "evidence_record": null,
+  "publishing_identity_verified": false,
+  "brand_and_provider_terms_reviewed": false,
+  "domain_and_https_verified": false,
+  "privacy_and_terms_approved": false,
+  "byteplus_live_render_passed": false,
+  "chatgpt_native_passed": false,
+  "codex_native_passed": false,
+  "antigravity_native_passed": false,
+  "reviewer_account_ready": false,
+  "walkthrough_recorded": false,
+  "security_review_completed": false
+}

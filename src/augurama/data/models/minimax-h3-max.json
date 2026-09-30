@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "profile": "minimax-h3-max",
+  "provider": "fal-ai",
+  "model_id": "minimax/h3-max",
+  "label": "MiniMax H3 Max (Frontier Photorealism)",
+  "revision": "2026-09-29.1",
+  "verified_at": "2026-09-29",
+  "review_by": "2027-12-31",
+  "minimum_duration": 2,
+  "maximum_duration": 10,
+  "maximum_images": 5,
+  "maximum_videos": 2,
+  "maximum_audio": 2,
+  "maximum_reference_video_seconds": 10,
+  "maximum_reference_audio_seconds": 10,
+  "maximum_single_reference_seconds": 10,
+  "audio_only_reference": false,
+  "resolutions": [
+    "480p",
+    "768p",
+    "1080p"
+  ],
+  "aspect_ratios": [
+    "16:9",
+    "9:16",
+    "1:1"
+  ],
+  "raw_real_faces": true,
+  "native_audio": true,
+  "return_last_frame": true,
+  "max_prompt_characters": 6000,
+  "pricing": {
+    "currency": "USD",
+    "unit": "seconds",
+    "list_rates": {
+      "480p": 0.025,
+      "768p": 0.040,
+      "1080p": 0.080
+    },
+    "snapshot_date": "2026-09-29",
+    "source": "https://fal.ai/models/minimax/h3-max",
+    "excludes": [
+      "tax",
+      "discounts"
+    ],
+    "not_a_billing_cap": true
+  },
+  "sources": [
+    "https://fal.ai/models/minimax/h3-max"
+  ],
+  "release_notes": "MiniMax H3 Max with deep photorealism and on-screen typography support."
+}

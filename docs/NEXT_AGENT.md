@@ -1,0 +1,12 @@
+# Next agent: finish external acceptance, do not rebuild
+
+Use this prompt in Codex or Antigravity with authenticated access to the private repository and the confidential delivery:
+
+> Work on `bohselecta/dreamina-director`, review branch `release/dual-plugin-rc1`. Read AGENTS.md, STATUS.md, docs/VERIFICATION.md and docs/REGISTRATION.md. The delivered source implements the product and includes two separate thin release packages. Inspect the actual branch first; the last observed upstream base was `112f8f60d2e618ba100f3a514b0af6159a611c19`, with only the original README. Use the included binary patch/guarded publisher only if that remains true; preserve any newer work. Run all tests and CI, inspect the actual UI, and repair root causes rather than rewriting the architecture. Keep the repository and recipe/compiler source private. Do not label fixture videos as AI generations.
+>
+> Complete the remaining bounded acceptance: choose an already authorized persistent deployment and real owner-controlled HTTPS origin, supply real support/approved policies, secure the original encryption key and backups, then validate live OAuth/MCP and media through the proxy. Install and exercise the separate packages in actual ChatGPT, Codex and Antigravity. Use the five positive and three negative cases. Provider generation uses BytePlus BYOK, not consumer Dreamina credits; obtain explicit per-test spending authority before a paid call. `scripts/live_acceptance.py` is preparation-only unless `--render` and a human fingerprint confirmation are supplied. Record real task IDs, revisions, video properties and separate human quality results. Do not retry ambiguous submissions.
+>
+> Prepare the verified Corgi-Verse publisher materials and exact OpenAI domain challenge, then generate hosted/public packages only when all gates are supported by evidence. Google curated listing requires its confirmed publisher process; do not invent a submission portal. Public release, outreach, paid services and legal registration require the owner's actual authority. End with the real commit/CI/deployment/native/provider results and only the specific remaining blockers, never blanket “done” claims.
+
+## Immediate next action
+Run the guarded publisher in an authenticated local environment, or inspect/apply the patch manually on a reviewable branch. The source archive and patch are confidential; do not upload either to a public plugin directory.

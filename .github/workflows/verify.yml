@@ -1,0 +1,51 @@
+name: Verify dual-plugin release candidate
+on:
+  push:
+    branches: [main, 'release/**']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: director-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      # Reviewed release tags on 2026-09-29; resolve/pin immutable commit SHAs in supply-chain review.
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.13'
+      - name: Install runtime and test dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install -r requirements.lock
+          python -m pip install -e '.[test]'
+          python -m playwright install --with-deps chromium
+      - name: Test real service logic, protocol boundaries and offline browser interactions
+        run: |
+          mkdir -p artifacts
+          python -m pytest -q --junitxml=artifacts/pytest.xml
+          python -m compileall -q src scripts
+          node --check src/dreamina_director/web/app.js
+          node --check src/dreamina_director/web/widget.js
+      - name: Package thin host release candidates
+        run: |
+          python scripts/package_releases.py --out dist
+          python -m pip wheel --no-deps . --wheel-dir dist
+          git diff --exit-code
+      - uses: actions/upload-artifact@v7.0.1
+        if: always()
+        with:
+          name: private-rc-verification-${{ github.sha }}
+          path: |
+            artifacts/
+            dist/*.zip
+            dist/*.json
+          retention-days: 7

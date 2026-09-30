@@ -1,0 +1,5 @@
+Copyright (c) 2026 Corgi-Verse Software. All rights reserved.
+
+Corgi-Verse Software permits installation and use of this unmodified host-plugin package to access an authorized Dreamina Director service. This permission does not grant rights to the private server implementation, recipe library, trademarks, or third-party media. Redistribution or commercial sublicensing requires the publisher's separate permission, except for applicable platform distribution rights separately agreed by the publisher.
+
+This prerelease is provided for evaluation without a promise of output accuracy, uninterrupted service, marketplace approval, or provider entitlement. Mandatory rights under applicable law are not excluded. Third-party services are governed by their own terms. Public launch and commercial terms require the publisher's legal approval.

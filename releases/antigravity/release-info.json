@@ -1,0 +1,10 @@
+{
+  "release": "0.1.0-rc.1",
+  "publisher": "Corgi-Verse Software",
+  "configuration": "local-development",
+  "backend_origin": "http://127.0.0.1:8765",
+  "native_host_verified": false,
+  "provider_render_verified": false,
+  "marketplace_registered": false,
+  "contains_private_recipe_source": false
+}

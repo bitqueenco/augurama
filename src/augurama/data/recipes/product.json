@@ -1,0 +1,21 @@
+{
+  "label": "Product film",
+  "description": "A controlled reveal that preserves shape, material, function and brand evidence.",
+  "principles": [
+    "Preserve product geometry and supplied marks; do not invent text, features or claims.",
+    "Prioritize silhouette, tactile material response and readable cause and effect over decorative motion.",
+    "Use motivated lighting and camera movement consistent with the authored direction.",
+    "Finish on the specified product state without adding promotional copy or unsupported UI."
+  ],
+  "schema_version": 1,
+  "id": "product",
+  "version": "1.0.0",
+  "authorship": "Corgi-Verse Software",
+  "evidence_status": "Original direction heuristics; visual effectiveness requires provider renders and human evaluation, not guaranteed by unit tests.",
+  "priority": [
+    "provider safety and API requirements",
+    "explicit user direction",
+    "approved shot timing and reference roles",
+    "recipe heuristics"
+  ]
+}

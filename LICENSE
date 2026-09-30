@@ -1,0 +1,7 @@
+Copyright (c) 2026 Corgi-Verse Software. All rights reserved.
+
+This private repository contains proprietary software, direction recipes, model-card curation, documentation and release tooling. No general open-source license or public redistribution right is granted. Corgi-Verse Software and its expressly authorized contributors may use, test and modify this source for the project. Other use or redistribution requires written permission from the rights holder.
+
+The independently packaged host interfaces in releases/ have their own limited installation license. Their distribution does not authorize distribution of the server source or private recipe library. Third-party components retain their respective licenses; see THIRD_PARTY_NOTICES.md. Generated test media was created specifically for this project's verification and is visibly labeled as a test fixture.
+
+Public product naming, commercial agreements, provider authorization, legal notices and platform publishing terms remain subject to the publisher's review. No first-party affiliation, trademark license, patentability, or guaranteed copyright protection is represented by this notice.

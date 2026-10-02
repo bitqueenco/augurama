@@ -1,7 +1,7 @@
 <div align="center">
 <img src="assets/logo.png" width="480" alt="Augurama - Autonomous Video Director">
 
-# Augurama
+# Augurama by Baba Hayden
 **Autonomous Video Directing & Multimodal Storyboard Orchestration Engine**
 
 *Direct the story. Orchestrate the take. Powered by fal.ai.*
@@ -18,7 +18,7 @@
 
 ## 1. Overview
 
-**Augurama** is a modular video directing engine and AI agent plugin designed for precision cinematography, multimodal storyboarding, and deterministic model orchestration. 
+**Augurama by Baba Hayden** is a modular video directing engine and AI agent plugin designed for precision cinematography, multimodal storyboarding, and deterministic model orchestration. 
 
 Instead of guessing raw text-to-video prompts or burning expensive generation credits on blind takes, Augurama acts as an autonomous virtual director:
 1. **Authors & Compiles Intent**: Translates high-level natural language into camera motions (dolly, truck, pan, crane, zoom), shot pacing, sound design, and character continuity.
@@ -31,7 +31,7 @@ Instead of guessing raw text-to-video prompts or burning expensive generation cr
 
 ## 2. Supported Frontier Video Models
 
-Augurama integrates a modular protocol adapter layer (`AuguramaModelProtocol`) routing through the **fal.ai queue API** (`FAL_KEY`):
+Augurama by Baba Hayden integrates a modular protocol adapter layer (`AuguramaModelProtocol`) routing through the **fal.ai queue API** (`FAL_KEY`):
 
 | Model | Fal.ai Endpoint / Identifier | Cost Baseline | Key Capabilities & Strengths |
 | :--- | :--- | :--- | :--- |
